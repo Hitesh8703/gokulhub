@@ -38,7 +38,11 @@ export default function DashboardPage() {
           const snap = await getDocs(q);
           setComplaints(snap.docs.map((d) => ({ id: d.id, ...d.data() })));
         }
+<<<<<<< HEAD
       } catch (error) { console.log(error); }
+=======
+      } catch (error) { console.error(error); }
+>>>>>>> 43986f6 (Premium UI final working build)
       setLoading(false);
     });
     return () => unsubscribe();
@@ -242,7 +246,11 @@ export default function DashboardPage() {
                 <div style={{ textAlign: "center", padding: "30px 0" }}>
                   <div style={{ fontSize: 36, marginBottom: 12 }}>🎉</div>
                   <p style={{ color: "#4ade80", fontWeight: 600 }}>No complaints</p>
+<<<<<<< HEAD
                   <p style={{ color: "#555", fontSize: "0.85rem", marginTop: 4 }}>You're in good standing</p>
+=======
+                  <p style={{ color: "#555", fontSize: "0.85rem", marginTop: 4 }}>You&apos;re in good standing</p>
+>>>>>>> 43986f6 (Premium UI final working build)
                 </div>
               ) : (
                 <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
