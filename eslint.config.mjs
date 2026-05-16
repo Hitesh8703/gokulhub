@@ -1,24 +1,5 @@
-import { dirname } from "path";
-import { fileURLToPath } from "url";
-import { FlatCompat } from "@eslint/eslintrc";
+import nextPlugin from "eslint-config-next";
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
-
-const compat = new FlatCompat({
-  baseDirectory: __dirname,
-});
-
-const eslintConfig = [
-  ...compat.extends("next/core-web-vitals", "next/typescript"),
-  {
-    rules: {
-      // Allow 'any' types — used intentionally throughout this codebase
-      "@typescript-eslint/no-explicit-any": "off",
-      // Allow console.log — used for error handling
-      "no-console": "off",
-    },
-  },
+export default [
+  ...nextPlugin,
 ];
-
-export default eslintConfig;

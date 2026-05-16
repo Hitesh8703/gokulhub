@@ -158,20 +158,12 @@ export default function AdminPage() {
               </select>
               <div style={{ display: "flex", gap: 10 }}>
                 <button onClick={grantAccolade} style={{
-<<<<<<< HEAD
-                  flex: 1, padding: "12px", borderRadius: 10, border: "none", cursor: "pointer",
-=======
-                  flex: 1, padding: "12px", borderRadius: 10, cursor: "pointer",
->>>>>>> 43986f6 (Premium UI final working build)
+                  flex: 1, padding: "12px", borderRadius: 10,  cursor: "pointer",
                   background: "rgba(34,197,94,0.15)", border: "1px solid rgba(34,197,94,0.3)",
                   color: "#4ade80", fontFamily: "'DM Sans', sans-serif", fontWeight: 600, fontSize: "0.9rem", transition: "all 0.2s",
                 }}>Grant</button>
                 <button onClick={removeAccolade} style={{
-<<<<<<< HEAD
-                  flex: 1, padding: "12px", borderRadius: 10, border: "none", cursor: "pointer",
-=======
                   flex: 1, padding: "12px", borderRadius: 10, cursor: "pointer",
->>>>>>> 43986f6 (Premium UI final working build)
                   background: "rgba(239,68,68,0.1)", border: "1px solid rgba(239,68,68,0.25)",
                   color: "#f87171", fontFamily: "'DM Sans', sans-serif", fontWeight: 600, fontSize: "0.9rem", transition: "all 0.2s",
                 }}>Remove</button>
